@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="风宝可爱捏的个人主页：寻找好用工具，享受舒适摸鱼，也热爱羽毛球。">
+  <title>风宝可爱捏 · 个人主页</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #171717;
+      --paper: #f7f7f5;
+      --muted: #727272;
+      --line: #deded9;
+      --white: #fff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+      line-height: 1.7;
+    }
+    main {
+      width: min(760px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 12vh 0 64px;
+    }
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 22px;
+      padding: 5px 11px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: .85rem;
+      letter-spacing: .04em;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(2.8rem, 9vw, 5.5rem);
+      line-height: 1.1;
+      letter-spacing: -.065em;
+    }
+    .intro {
+      max-width: 600px;
+      margin: 26px 0 0;
+      color: #4b4b4b;
+      font-size: clamp(1.05rem, 2.6vw, 1.25rem);
+    }
+    .rule { height: 1px; margin: 54px 0 30px; background: var(--line); }
+    h2 { margin: 0 0 18px; font-size: 1rem; letter-spacing: .08em; }
+    .interests { display: flex; flex-wrap: wrap; gap: 10px; }
+    .interests span {
+      padding: 8px 13px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--white);
+      font-size: .92rem;
+    }
+    footer { margin-top: 70px; color: var(--muted); font-size: .85rem; }
+    @media (prefers-reduced-motion: no-preference) {
+      main { animation: arrive .6s ease-out both; }
+      @keyframes arrive { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="eyebrow">一点点认真，也要好好生活</span>
+    <h1>风宝可爱捏</h1>
+    <p class="intro">致力于寻找最好用的工具，让我可以舒舒服服地摸鱼。工作之外，也喜欢打羽毛球。</p>
+
+    <div class="rule"></div>
+    <section aria-labelledby="interests-title">
+      <h2 id="interests-title">最近的关键词</h2>
+      <div class="interests">
+        <span>好用的工具</span>
+        <span>舒舒服服摸鱼</span>
+        <span>羽毛球</span>
+      </div>
+    </section>
+    <footer>黑白简约 · 慢慢探索，快乐生活</footer>
+  </main>
+</body>
+</html>
